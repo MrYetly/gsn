@@ -5,7 +5,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.parsers import JSONParser
 from rest_framework.response import Response
 from gsndb.models import District, School, Student, Course, Grade, Behavior, Attendance, Referral
-from gsndb.serializers import DistrictSerializer, SchoolSerializer, MyStudentSerializer, StudentDetailSerializer
+from gsndb.serializers import DistrictSerializer, SchoolSerializer, MyStudentsSerializer, StudentSerializer
 from rest_framework import generics
 from rest_framework.views import APIView
 

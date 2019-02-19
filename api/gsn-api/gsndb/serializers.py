@@ -24,7 +24,7 @@ class StudentSerializer(serializers.ModelSerializer):
     current_school = SchoolSerializer(read_only = True)
 
     class Meta:
-        model = student
+        model = Student
         fields = (
         "first_name",
         "last_name",
@@ -42,7 +42,7 @@ class MyStudentsSerializer(serializers.ModelSerializer):
     current_school = SchoolSerializer(read_only = True)
 
     class Meta:
-        model = student
+        model = Student
         fields = (
         "first_name",
         "last_name",
