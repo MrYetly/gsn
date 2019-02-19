@@ -15,7 +15,7 @@ class School(models.Model):
     name = models.TextField(max_length = 150)
     district = models.ForeignKey(
         'District',
-        on_delete=models.CASCADE,
+        on_delete=models.PROTECT,
     )
 
 class Student(models.Model):
